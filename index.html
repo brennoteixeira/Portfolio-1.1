@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Portfólio</title>
+        <meta charset="utf-8">
+
+        <link rel="icon" type="image/png" href="imagens/logo.png">
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <header class="header">
+        <div class="logo">
+        <img src="imagens/logo.png" alt="Logo">
+        </div>
+
+
+        <div class="header-actions">
+            <button id="lang-btn" onclick="toggleLanguage()">PT</button>
+            
+            <button id="menu-btn" class="menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+
+            <!-- Botão de alternar modo -->
+            <div class="header-center">
+            <button id="theme-btn" class="theme-btn" title="Alternar modo">☾</button>
+            </div>
+
+
+
+            
+        </div>
+        </header>
+
+        <nav id="nav" class="nav">
+        <a data-scroll="home"data-pt="Início"data-en="Home">Início</a>
+        <a data-scroll="about"data-pt="Sobre"data-en="About">Sobre</a>
+        <a data-scroll="projects"data-pt="Projetos"data-en="Projects">Projetos</a>
+        <a data-scroll="contact"data-pt="Contato"data-en="Contact">Contato</a>
+        </nav>
+
+        <section class="home" id="home">
+        <div class="home-content">
+
+            <p class="home-intro" data-pt="Olá, meu nome é" data-en="Hello, my name is">
+            Olá, meu nome é
+            </p>
+
+            <h1 class="home-name" data-pt="Brenno Teixeira" data-en="Brenno Teixeira">
+            Brenno Teixeira
+            </h1>
+
+            <h1 data-pt="Desenvolvedor Full Stack em formação, focado em soluções práticas e bem estruturadas."
+                data-en="Full Stack Developer in training, focused on practical and well-structured solutions.">
+            Desenvolvedor Full Stack em formação,<br>
+            focado em soluções práticas e bem estruturadas.
+            </h1>
+
+            <p data-pt="Transformo aprendizado constante em projetos reais, com atenção a código limpo, organização e boas práticas."
+            data-en="I turn continuous learning into real projects, with attention to clean code, organization, and best practices.">
+            Transformo aprendizado constante em projetos reais,
+            com atenção a código limpo, organização e boas práticas.
+            </p>
+
+            <div class="home-buttons">
+            <a href="#about" class="btn primary" id="btn-about"
+                data-pt="Vamos começar!" data-en="Let's get started!">Vamos começar!</a>
+
+            <a href="#contact" class="btn secondary"
+                data-pt="Entrar em Contato" data-en="Get in Touch">Entrar em Contato</a>
+            </div>
+
+            <span class="home-note"
+            data-pt="Em busca da primeira oportunidade para crescer, aprender e gerar impacto real."
+            data-en="Looking for my first opportunity to grow, learn, and make a real impact.">
+            Em busca da primeira oportunidade para crescer, aprender e gerar impacto real.
+            </span>
+
+        </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-container">
+
+
+                <div class="about-content">
+
+                    <h1 data-pt="Sobre mim" data-en="About Me">Sobre mim</h1>
+
+                    <p data-pt="Sou estudante de Engenharia de Software, atualmente no primeiro período, e tenho grande interesse pela área de desenvolvimento. Encontrei na tecnologia um espaço onde lógica, criatividade e resolução de problemas se conectam de forma prática."
+                    data-en="I am a Software Engineering student, currently in my first semester, with a strong interest in the development field. I found in technology a space where logic, creativity, and problem-solving come together in a practical way.">
+                    Sou estudante de Engenharia de Software, atualmente no primeiro período, e tenho grande interesse pela área de desenvolvimento. Encontrei na tecnologia um espaço onde lógica, criatividade e resolução de problemas se conectam de forma prática.
+                    </p>
+
+                    <p data-pt="Meu interesse pelo desenvolvimento vem da possibilidade de construir soluções que saem do papel e ganham forma, impactando pessoas de maneira real. Gosto de entender como as aplicações funcionam por completo e de participar de todo o processo, do conceito à entrega."
+                    data-en="My interest in software development comes from the possibility of building solutions that move from concept to reality and have a real impact on people. I enjoy understanding how applications work as a whole and taking part in the entire process, from idea to delivery.">
+                    Meu interesse pelo desenvolvimento vem da possibilidade de construir soluções que saem do papel e ganham forma, impactando pessoas de maneira real. Gosto de entender como as aplicações funcionam por completo e de participar de todo o processo, do conceito à entrega.
+                    </p>
+                </div>    
+                    
+                <div class="about-photo">
+                    <img src="imagens/eu.jpg" alt="Foto de Brenno">
+                </div>
+
+                                 
+
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+
+
+    </body>
+
+</html>
