@@ -126,3 +126,16 @@ if (closeContact && contactModal) {
     }
   });
 }
+
+/* ===== LOGO VOLTA AO INÍCIO ===== */
+
+const logoHome = document.getElementById("logo-home");
+
+if (logoHome) {
+  logoHome.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}

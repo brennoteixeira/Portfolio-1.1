@@ -206,18 +206,90 @@ a:hover {
   }
 }
 
-/* HEADER */
-.header {
+/* ===== HEADER MODERNO ===== */
+
+header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  height: 64px;
-  padding: 0 20px;
+  height: 72px;
+
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: #252525;
-  z-index: 1000;
+  justify-content: space-between;
+
+  padding: 0 32px;
+  z-index: 2000;
+}
+
+header .logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+header nav a {
+  position: relative;
+  margin-left: 28px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.85;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+header nav a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* linha sutil (igual ao menu) */
+header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #fff,
+    rgba(255,255,255,0.4)
+  );
+  transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+header .btn-contact {
+  margin-left: 32px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+header .btn-contact:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-1px);
 }
 
 /* LOGO */
@@ -311,20 +383,27 @@ a:hover {
   font-family: 'Poppins', sans-serif;
 }
 
-/* NAV LATERAL */
+/* ===== NAV MODERNA ===== */
+
 .nav {
   position: fixed;
   top: 64px;
-  right: 0;
+  right: 16px;
   width: 260px;
-  height: calc(100vh - 64px);
-  background: #252525;
-  border-left: 1px solid #111;
+  height: calc(100vh - 96px);
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
   display: flex;
   flex-direction: column;
-  padding: 24px;
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
+  padding: 28px;
+
+  transform: translateX(120%);
+  transition: transform 0.35s ease;
   z-index: 1500;
 }
 
@@ -332,11 +411,65 @@ a:hover {
   transform: translateX(0);
 }
 
+/* ===== LINKS DO MENU ===== */
+
 .nav a {
-  padding: 12px 0;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 12px 4px;
+  color: #fff;
   cursor: pointer;
-  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
+
+.nav a:hover {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* linha tech */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #fff,
+    rgba(255,255,255,0.4)
+  );
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== ANIMAÇÃO DOS LINKS ===== */
+
+.nav a {
+  opacity: 0;
+  transform: translateX(10px);
+  animation: navFade 0.4s ease forwards;
+}
+
+.nav a:nth-child(1) { animation-delay: 0.05s; }
+.nav a:nth-child(2) { animation-delay: 0.1s; }
+.nav a:nth-child(3) { animation-delay: 0.15s; }
+.nav a:nth-child(4) { animation-delay: 0.2s; }
+
+@keyframes navFade {
+  to {
+    opacity: 0.9;
+    transform: translateX(0);
+  }
+}
+
 
 /* ===== EFEITO TECH PARA BOTÕES ===== */
 .btn, #lang-btn {
@@ -886,4 +1019,44 @@ body.light-mode .github-float {
 
 body.light-mode .github-float svg {
   fill: #111;
+}
+
+/* ===== NAV - MODO CLARO ===== */
+
+body.light-mode .nav {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+body.light-mode .nav a {
+  color: #111;
+}
+
+body.light-mode .nav a::after {
+  background: linear-gradient(
+    90deg,
+    #111,
+    rgba(0,0,0,0.4)
+  );
+}
+
+/* ===== HEADER - MODO CLARO ===== */
+
+body.light-mode header {
+  background: rgba(255,255,255,0.75);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+body.light-mode header .logo,
+body.light-mode header nav a,
+body.light-mode header .btn-contact {
+  color: #111;
+}
+
+body.light-mode header nav a::after {
+  background: linear-gradient(
+    90deg,
+    #111,
+    rgba(0,0,0,0.4)
+  );
 }
