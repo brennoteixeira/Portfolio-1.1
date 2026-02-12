@@ -13,33 +13,29 @@ OBS: contém versão em português e inglês!
 - HTML5  
 - CSS3  
 - JavaScript  
-- Git & GitHub  
-
-*(Outras tecnologias poderão ser adicionadas conforme novos projetos forem incluídos.)*
 
 ---
 
 ## 📂 Estrutura do Projeto
 
 - `index.html` → Página inicial  
-- `css/` → Estilos do site  
-- `js/` → Scripts e interações  
-- `assets/` → Imagens, ícones e arquivos visuais  
+- `style.css` → Estilos do site  
+- `script.js` → Scripts e interações  
+- `imagens/` → Imagens, ícones e arquivos visuais  
 
 ---
 
 ## 🎯 Objetivo do Projeto
 
 - Criar um portfólio profissional
-- Praticar desenvolvimento Front-end
-- Aplicar versionamento de código
+- Praticar meu desenvolvimento Front-end
 - Evoluir continuamente com novos projetos
 
 ---
 
 ## 📌 Status
 
-🛠️ Em desenvolvimento — melhorias e novos projetos serão adicionados constantemente.
+🛠️ Em desenvolvimento — melhorias e projetos serão adicionados constantemente.
 
 ---
 
@@ -47,7 +43,7 @@ OBS: contém versão em português e inglês!
 
 **Brenno Teixeira**  
 Estudante de Engenharia de Software  
-Foco em Desenvolvimento Full Stack  
+Foco em Desenvolvimento Full Stack 
 
 📎 GitHub: [brennoteixeira](https://github.com/brennoteixeira)
 💼 LinkedIn: www.linkedin.com/in/brennoteixeira
