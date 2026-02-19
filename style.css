@@ -849,6 +849,7 @@ body.light-mode .skills-list li {
 .project-links {
   display: flex;
   gap: 20px;
+  text-decoration: none;
 }
 
 .project-links a {
@@ -1096,4 +1097,5 @@ body.light-mode header nav a::after {
   text-decoration: none !important;
 
 }
+
 
