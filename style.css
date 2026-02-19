@@ -842,6 +842,7 @@ body.light-mode .skills-list li {
   border-radius: 999px;
   background: #000;
   border: 1px solid #333;
+  text-decoration: none;
 }
 
 /* links */
@@ -1095,3 +1096,4 @@ body.light-mode header nav a::after {
   text-decoration: none !important;
 
 }
+
