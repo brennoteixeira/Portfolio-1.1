@@ -45,7 +45,6 @@ OBS: contém versão em português e inglês!
 Estudante de Engenharia de Software  
 Foco em Desenvolvimento Full Stack 
 
-📎 GitHub: [brennoteixeira](https://github.com/brennoteixeira)
 💼 LinkedIn: www.linkedin.com/in/brennoteixeira
 
 ---
