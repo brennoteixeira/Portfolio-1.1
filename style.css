@@ -855,6 +855,7 @@ body.light-mode .skills-list li {
 .project-links a {
   font-size: 0.9rem;
   font-weight: 600;
+  text-decoration: none;
 }
 
 /* modo claro */
@@ -1097,5 +1098,6 @@ body.light-mode header nav a::after {
   text-decoration: none !important;
 
 }
+
 
 
